@@ -1,13 +1,9 @@
 (ns yaml-parser.core
-  (:require [clojure.string :as string]))
-
-(defn is-yaml? [path] 
-  "Verifies that the given path is the one of a yaml file."
-  (string/ends-with? path ".yaml"))
-
-
+  (:require [clojure.string :as string])
+  (:require [clojure.java.io :as io])
+  (:require [yaml-parser.yaml :refer :all]))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, world!"))
+  (lol))
