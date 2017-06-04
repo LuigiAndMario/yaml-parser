@@ -11,13 +11,15 @@
         (if (is-yaml? user-input)
           (to-csv user-input)
           (println "The file is not a valid yaml file.")))
-          
+
       (run (.trim (read-line))))))
 
 (defn -main
   [& args]
   (println "Welcome to yaml-parser!")
   (println "Enter the absolute path of a yaml file you wish to convert, and obtain it as a CSV for free!")
+  (println "")
+  (println "You can exit at any time by typing exit.")
   (println "")
   (if (string/blank? (first args))
     (run nil)
