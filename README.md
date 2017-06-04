@@ -1,36 +1,20 @@
 # yaml-parser
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+A yaml to CSV converter, written in Clojure.
 
 ## Usage
 
-FIXME: explanation
+* Clone the repository.
+* Run the command `lein run`.
+* Give the absolute path of a yaml-file you wish to convert.
+* Type `exit` to quit.
+
+This program does NOT modify the original yaml file.
+
+You can also create a jar by running
 
     $ java -jar yaml-parser-0.1.0-standalone.jar [args]
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+This app can also be run with the absolute path of a yaml file as an option.
