@@ -36,8 +36,9 @@
 
 (deftest to-csv-works-for-simple-input
   (testing "to-csv writes a correct csv for a regular input"
-    (let [obtained-output (to-csv test-basic)]
-      (is (= (slurp test-basic-output) (slurp test-basic-expectation))))))
+    (with-in-str "y" 
+      (let [obtained-output (to-csv test-basic)])
+        (is (= (slurp test-basic-output) (slurp test-basic-expectation))))))
 
 (deftest remove-comments-work-on-simple-input
   (testing "remove-comments should correctly cut between a comment token and a carrige return."
